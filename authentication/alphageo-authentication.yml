@@ -1,0 +1,27 @@
+generated: '2026-07-17'
+method: searched
+source: https://docs.alphageo.ai/for-developers/alphageo-data-api
+docs: https://docs.alphageo.ai/for-developers/alphageo-data-api
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+  oauth2_flows: []
+schemes:
+- name: AuthorizationToken
+  type: apiKey
+  in: header
+  parameter_name: Authorization
+  description: >-
+    Access-token authentication. The account access token is passed verbatim as the value of
+    the HTTP Authorization header (no "Bearer" prefix): `Authorization: <your_access_token>`.
+    Tokens are obtained from the AlphaGeo dashboard (upper-right "API" menu) and require an
+    Enterprise subscription and adequate in-app permissions. AlphaGeo recommends routinely
+    refreshing the token as a security measure.
+  sources:
+  - https://docs.alphageo.ai/for-developers/alphageo-data-api
+notes:
+  - Token issuance is gated behind an Enterprise subscription.
+  - No OAuth2/OIDC or scope surface is documented for the public Data API; a single opaque account token authorizes all endpoints.
+  - Token can be refreshed/rotated from the dashboard.
