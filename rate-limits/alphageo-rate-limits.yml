@@ -1,0 +1,50 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+provider: AlphaGeo
+providerId: alphageo
+generated: '2026-07-17'
+method: searched
+created: '2026-07-17'
+modified: '2026-07-17'
+tags:
+  - Rate Limiting
+  - Climate Risk
+description: >-
+  AlphaGeo Data API rate limits are enforced per endpoint as requests-per-minute. Exceeding a
+  limit returns HTTP 429 Too Many Requests. Higher limits are available on request via
+  support@alphageo.ai.
+source: https://docs.alphageo.ai/for-developers/alphageo-data-api
+docs: https://docs.alphageo.ai/for-developers/alphageo-data-api
+responseCodes:
+  throttled: 429
+limits:
+  - name: Scores (CRRI)
+    scope: account
+    metric: requests_per_minute
+    limit: 60
+    timeFrame: minute
+  - name: Physical Risk
+    scope: account
+    metric: requests_per_minute
+    limit: 60
+    timeFrame: minute
+  - name: Resilience-adjusted Risk
+    scope: account
+    metric: requests_per_minute
+    limit: 60
+    timeFrame: minute
+  - name: Analytics
+    scope: account
+    metric: requests_per_minute
+    limit: 60
+    timeFrame: minute
+  - name: Portfolio Scores
+    scope: account
+    metric: requests_per_minute
+    limit: 30
+    timeFrame: minute
+  - name: Institution Assets
+    scope: account
+    metric: requests_per_minute
+    limit: 60
+    timeFrame: minute

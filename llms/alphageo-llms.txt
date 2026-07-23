@@ -1,0 +1,88 @@
+# AlphaGeo Public Docs
+
+## AlphaGeo Public Docs
+
+- [Welcome](https://docs.alphageo.ai/welcome.md)
+- [Client Onboarding Guide](https://docs.alphageo.ai/client-onboarding-guide.md): Getting started with AlphaGeo
+- [Access to Our Methodology Docs](https://docs.alphageo.ai/methodology/access-to-our-methodology-docs.md)
+- [Methodology Docs](https://docs.alphageo.ai/methodology/methodology-docs.md): Overview of AlphaGeo's methodology documentation across core models and datasets
+- [Climate Risk and Resilience Index - Methodology](https://docs.alphageo.ai/methodology/methodology-docs/climate-risk-and-resilience-index-methodology.md): Overview of the CRRI methodology, data processing, and supporting reference pages
+- [Methodology: Resilience-adjusted Risk with Triple-layer Adaptation Offset](https://docs.alphageo.ai/methodology/methodology-docs/climate-risk-and-resilience-index-methodology/methodology-resilience-adjusted-risk-with-triple-layer-adaptation-offset.md): AlphaGeo's resilience-adjusted risk framework calculates both a physical risk and resilience-adjusted risk score based on a triple-layer adaptation workflow
+- [Methodology: Remediation Checklist - Quantifying Asset-level Adaptation](https://docs.alphageo.ai/methodology/methodology-docs/climate-risk-and-resilience-index-methodology/measuring-asset-resilience.md)
+- [Methodology: Climate Data Processing, Resolution & Downscaling](https://docs.alphageo.ai/methodology/methodology-docs/climate-risk-and-resilience-index-methodology/methodology-climate-data-processing-resolution-and-downscaling.md)
+- [Data Sources](https://docs.alphageo.ai/methodology/methodology-docs/climate-risk-and-resilience-index-methodology/data-sources.md)
+- [Financial Impact Analytics - Methodology](https://docs.alphageo.ai/methodology/methodology-docs/financial-impact-analytics-methodology.md): Overview of the FIA methodology, asset-specific adjustments, and supporting references
+- [Methodology: Location based financial metrics (1/2)](https://docs.alphageo.ai/methodology/methodology-docs/financial-impact-analytics-methodology/methodology-location-based-financial-metrics-1-2.md)
+- [Methodology: Asset-Specific Vulnerability Framework (2/2)](https://docs.alphageo.ai/methodology/methodology-docs/financial-impact-analytics-methodology/methodology-asset-specific-vulnerability-framework-2-2.md)
+- [Appendix: Sensitivity Coefficient Rationale per Asset Class](https://docs.alphageo.ai/methodology/methodology-docs/financial-impact-analytics-methodology/appendix-sensitivity-coefficient-rationale-per-asset-class.md)
+- [References](https://docs.alphageo.ai/methodology/methodology-docs/financial-impact-analytics-methodology/references.md)
+- [Global Adaptation Layer - Methodology](https://docs.alphageo.ai/methodology/methodology-docs/global-adaptation-layer-methodology.md): How the Global Adaptation Layer is built from raw geospatial features to hazard-specific adaptation scores
+- [Migration Monitor - Methodology](https://docs.alphageo.ai/methodology/methodology-docs/migration-monitor-methodology.md): How We Estimate Future Population Change Due to Flooding
+- [Clima-Metrics (Climate GDP) - Methodology](https://docs.alphageo.ai/methodology/methodology-docs/clima-metrics-climate-gdp-methodology.md): How we forecast subnational, multi-hazard GDP loss
+- [Climate Risk and Resilience Index](https://docs.alphageo.ai/climate-resilience-suite/climate-risk-and-resilience-index.md): A resilience-adjusted approach to climate risk
+- [Indexing & Score Interpretation](https://docs.alphageo.ai/climate-resilience-suite/climate-risk-and-resilience-index/methodology-3-3-indexing.md)
+- [AlphaGeo versus the Market: Climate Risk and Resilience Index (CRRI)](https://docs.alphageo.ai/climate-resilience-suite/climate-risk-and-resilience-index/alphageo-versus-the-market-climate-risk-and-resilience-index.md): AlphaGeo versus the market
+- [Financial Impact Analytics](https://docs.alphageo.ai/climate-resilience-suite/financial-impact-analytics.md): Modelling the financial impact of climate change
+- [Hazard Alerts](https://docs.alphageo.ai/climate-resilience-suite/hazard-alerts.md)
+- [Use Case: Regulatory Disclosures](https://docs.alphageo.ai/climate-resilience-suite/use-case-regulatory-disclosures.md)
+- [Use Case: Climate-adjusted Valuation](https://docs.alphageo.ai/climate-resilience-suite/use-case-alphageo-for-climate-adjusted-valuation.md): How analysts can use Financial Impact Analytics to forecast climate-adjusted cashflows
+- [FAQ: Climate Resilience Suite](https://docs.alphageo.ai/climate-resilience-suite/data-products-faq.md)
+- [Limitations, Assumptions, and Data Transparency](https://docs.alphageo.ai/climate-resilience-suite/limitations-assumptions-and-data-transparency.md)
+- [Why AlphaGeo for Climate Resilience](https://docs.alphageo.ai/climate-resilience-suite/why-alphageo-for-climate-resilience.md)
+- [Global Adaptation Layer](https://docs.alphageo.ai/global-adaptation-layer/methodology-2-3-global-adaptation-layer.md): Proprietary suite of hyper-local, multi-hazard global climate adaptation datasets
+- [Use Case: Thematic Investing in Adaptation](https://docs.alphageo.ai/global-adaptation-layer/alphageo-for-investing-in-adaptation.md): How geospatial data can drive investments in climate adaptation
+- [Use Case: Insurance Risk Models and Underwriting](https://docs.alphageo.ai/global-adaptation-layer/alphageo-for-insurance.md): Integrate resilience into underwriting and guide clients towards adaptation
+- [Climate Price](https://docs.alphageo.ai/climate-price/climate-price.md)
+- [Dynamism Signals](https://docs.alphageo.ai/macro-suite/location-macro-signals.md): Geospatial macro-intelligence for market research and investment strategy
+- [Dynamism Signals (US-only)](https://docs.alphageo.ai/macro-suite/location-dynamism-signals-us-only.md): Predictive indicators of real estate market demand and dynamism
+- [Net Gravity Score (NGS)](https://docs.alphageo.ai/macro-suite/location-dynamism-signals-us-only/net-gravity-score-ngs.md): Proprietary forecast of all-factor migration potential for every US census tract
+- [FAQs](https://docs.alphageo.ai/macro-suite/location-dynamism-signals-us-only/faqs.md): In progress
+- [Clima-Metrics](https://docs.alphageo.ai/macro-suite/clima-metrics.md): Proprietary forecast of climate-driven GDP loss across hazards and sectors
+- [Migration Modeler](https://docs.alphageo.ai/macro-suite/migration-modeler.md)
+- [Migration Modeler -OLD](https://docs.alphageo.ai/macro-suite/migration-modeler-old.md): Proprietary forecast of flood-driven population change across U.S. census blocks
+- [Global Data Marketplace](https://docs.alphageo.ai/global-data-marketplace/global-data-marketplace.md)
+- [Platform Overview](https://docs.alphageo.ai/alphageo-platform/platform-overview.md)
+- [Admin Panel](https://docs.alphageo.ai/alphageo-platform/admin-panel.md): Manage team members and permissions.
+- [Data Manager](https://docs.alphageo.ai/alphageo-platform/data-manager.md): Upload, tier, edit, and export your data.
+- [Exporting Analytics](https://docs.alphageo.ai/alphageo-platform/exporting-analytics.md): Download PDF reports and XLS files.
+- [Portfolio Analytics](https://docs.alphageo.ai/alphageo-platform/portfolio-analytics.md): Assess climate risk across portfolios and assets.
+- [Multi-asset View](https://docs.alphageo.ai/alphageo-platform/portfolio-analytics/multi-asset-view.md)
+- [Single-asset View](https://docs.alphageo.ai/alphageo-platform/portfolio-analytics/single-asset-property-map.md): Conduct asset-level climate risk and financial impact assessments.
+- [Hazard Alerts View](https://docs.alphageo.ai/alphageo-platform/portfolio-analytics/hazard-alerts-view.md): Monitor live and near-term hazards across your portfolio.
+- [Remediation Checklist](https://docs.alphageo.ai/alphageo-platform/portfolio-analytics/remediation-checklist.md): Assess asset-level adaptation measures and understand how they affect resilience-adjusted risk.
+- [Location Explorer](https://docs.alphageo.ai/alphageo-platform/location-explorer.md): Run on-demand analysis for any location.
+- [Microsites](https://docs.alphageo.ai/alphageo-platform/sharing-analytics.md): Share dashboards with external collaborators.
+- [Creating and sharing microsites](https://docs.alphageo.ai/alphageo-platform/sharing-analytics/creating-and-sharing-microsites.md)
+- [Accessing and viewing microsites](https://docs.alphageo.ai/alphageo-platform/sharing-analytics/accessing-and-viewing-microsites.md)
+- [AlphaGeo Explorer](https://docs.alphageo.ai/alphageo-platform/alphageo-explorer.md): Get oriented in the app and learn the main workflows.
+- [Trial Access](https://docs.alphageo.ai/alphageo-platform/trial.md): Interested in trialing our product? Here's how.
+- [FAQ: Navigating Our SaaS Platform](https://docs.alphageo.ai/alphageo-platform/alphageo-explorer-platform-faq.md): Frequently asked questions about our native SaaS application, AlphaGeo Explorer
+- [Data Delivery](https://docs.alphageo.ai/for-developers/data-access-and-delivery.md)
+- [Data APIs](https://docs.alphageo.ai/for-developers/alphageo-data-api.md)
+- [Climate Risk and Resilience Index (CRRI) API](https://docs.alphageo.ai/for-developers/alphageo-data-api/global-climate-risk-index-api.md)
+- [Global Adaptation Layers Risk API](https://docs.alphageo.ai/for-developers/alphageo-data-api/global-adaptation-layers-risk-api.md)
+- [Global Adaptation Layers Resilience API](https://docs.alphageo.ai/for-developers/alphageo-data-api/global-adaptation-layers-resilience-api.md)
+- [Financial Impact Analytics API](https://docs.alphageo.ai/for-developers/alphageo-data-api/financial-impact-analytics-api.md)
+- [Portfolio Scores API](https://docs.alphageo.ai/for-developers/alphageo-data-api/portfolio-scores-api.md)
+- [Institution Assets API](https://docs.alphageo.ai/for-developers/alphageo-data-api/institution-assets-api.md)
+- [Data Dictionary](https://docs.alphageo.ai/for-developers/data-dictionary.md)
+- [Snowflake Native Application](https://docs.alphageo.ai/for-developers/snowflake-native-application.md): On-Demand Climate Risk and Resilience Analytics
+- [Compliance FAQ](https://docs.alphageo.ai/general-faqs/compliance-faq.md)
+- [Data Management FAQ](https://docs.alphageo.ai/general-faqs/data-management-faq.md)
+- [Strategic Advisory Partnerships](https://docs.alphageo.ai/partnerships-and-pricing/strategic-advisory-partnerships.md): A streamlined draft for consulting and advisory partners evaluating AlphaGeo.
+
+
+---
+
+# Agent Instructions
+This documentation is published with GitBook. GitBook is the documentation platform designed so that both humans and AI agents can read, navigate, and reason over technical content effectively. Learn more at gitbook.com.
+
+## Querying This Documentation
+If you need additional information, you can query the documentation dynamically by asking a question.
+Perform an HTTP GET request on a page URL with the `ask` query parameter:
+```
+GET https://docs.alphageo.ai/welcome.md?ask=<question>
+```
+The question should be specific, self-contained, and written in natural language.
+The response will contain a direct answer to the question and relevant excerpts and sources from the documentation.
+Use this mechanism when the answer is not explicitly present in the current page, you need clarification or additional context, or you want to retrieve related documentation sections.

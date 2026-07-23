@@ -1,0 +1,33 @@
+generated: '2026-07-17'
+method: searched
+source: https://docs.alphageo.ai/for-developers/alphageo-data-api
+format: json
+description: >-
+  Error responses documented for the AlphaGeo Data API. The API returns standard HTTP status
+  codes with a JSON error message body; it does not advertise RFC 9457 application/problem+json.
+envelope:
+  media_type: application/json
+  fields:
+  - message
+problems:
+  - status: 400
+    title: Bad Request
+    description: >-
+      No location identifier supplied. Location-level endpoints require at least one of
+      asset_id, latitude+longitude, or address; when none are provided the API returns 400
+      with an error message.
+    remediation: Provide at least one location identifier (asset_id, lat/long, or address).
+    source_operations:
+    - GET /scores
+    - GET /physical_risk
+    - GET /risk_data
+  - status: 401
+    title: Unauthorized
+    description: Missing or invalid Authorization token.
+    remediation: Supply a valid account access token in the Authorization header.
+  - status: 429
+    title: Too Many Requests
+    description: >-
+      Per-endpoint requests-per-minute rate limit exceeded (see rate-limits/alphageo-rate-limits.yml).
+    remediation: Back off and retry; contact support@alphageo.ai for a higher limit.
+    ref: rate-limits/alphageo-rate-limits.yml

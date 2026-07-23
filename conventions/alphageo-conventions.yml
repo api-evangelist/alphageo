@@ -1,0 +1,64 @@
+generated: '2026-07-17'
+method: searched
+source: https://docs.alphageo.ai/for-developers/alphageo-data-api
+docs: https://docs.alphageo.ai/for-developers/alphageo-data-api
+description: >-
+  Cross-cutting request/response conventions for the AlphaGeo Data API, captured from the
+  developer documentation. The API is a read-only (GET-only) REST surface returning JSON.
+authentication:
+  style: api-key
+  header: Authorization
+  detail: Account access token passed verbatim in the Authorization header (no Bearer prefix).
+  ref: authentication/alphageo-authentication.yml
+protocol:
+  style: REST
+  transport: https
+  media_type: application/json
+  base_url: https://app.alphageo.ai/api/public/v1
+  methods:
+  - GET
+idempotency:
+  supported: false
+  note: >-
+    All documented operations are read-only GET requests, which are inherently idempotent; the
+    provider documents no write operations and no Idempotency-Key header.
+location_resolution:
+  description: >-
+    Location-level endpoints require at least one location identifier; when several are supplied
+    the API resolves in a fixed precedence order.
+  precedence:
+  - asset_id
+  - latitude + longitude
+  - address (geocoded)
+  missing_identifier_error: 400 Bad Request
+pagination:
+  style: page-number
+  applies_to:
+  - Institution Assets (/assets)
+  request_params:
+  - page
+  - page_size
+  response_fields:
+  - count
+  - next
+  - previous
+  - results
+query_dimensions:
+  period:
+    required: true
+    values: ['2025', '2035', '2050', '2100']
+  scenario:
+    required: true
+    description: CMIP6 emission scenario
+    values: [SSP245, SSP370, SSP585]
+versioning:
+  scheme: uri-path
+  current: v1
+  detail: Version pinned in the path segment /api/public/v1.
+  ref: lifecycle/alphageo-lifecycle.yml
+rate_limiting:
+  signal: HTTP 429 Too Many Requests on limit exceed
+  ref: rate-limits/alphageo-rate-limits.yml
+errors:
+  envelope: JSON body with an error message
+  ref: errors/alphageo-problem-types.yml

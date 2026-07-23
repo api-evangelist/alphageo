@@ -1,0 +1,21 @@
+generated: '2026-07-17'
+method: searched
+probe: true
+source: https://alphageo.ai/security/
+url: https://alphageo.ai/security/
+certifications:
+- SOC 2
+compliance_frameworks:
+- GDPR
+- CCPA
+subprocessor_certifications:
+  note: >-
+    ISO 27001, SOC 1/2/3, PCI DSS, and FedRAMP referenced on the page are held by AlphaGeo's
+    infrastructure sub-processors (AWS) and data lake (Snowflake), NOT by AlphaGeo itself.
+  AWS: [ISO 27001, SOC 1, SOC 2, SOC 3, PCI DSS, FedRAMP]
+  Snowflake: [ISO 27001, SOC 2, PCI DSS, FedRAMP]
+evidence:
+- source: https://alphageo.ai/security/
+  claim: >-
+    AlphaGeo produces Service Organization Control (SOC 2) reports based on independent audits
+    (61 active controls); GDPR (80 controls) and CCPA (34 controls) frameworks active.

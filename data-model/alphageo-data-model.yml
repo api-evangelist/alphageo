@@ -1,0 +1,62 @@
+generated: '2026-07-17'
+method: derived
+source: https://docs.alphageo.ai/for-developers/alphageo-data-api
+description: >-
+  Entity-relationship model derived from the AlphaGeo Data API documentation. The core domain
+  is an Institution's portfolio of Assets, each resolvable to Location-level climate risk and
+  financial-impact Scores across scenario/period dimensions.
+entities:
+  - name: Institution
+    description: The subscribing organization that owns uploaded assets and portfolios.
+  - name: Asset
+    description: >-
+      A location uploaded to an institution's account, identified by a UUID (id). Passed as
+      asset_id to location-level endpoints.
+    id_field: id
+    id_type: uuid
+    source_operation: GET /assets
+  - name: Location
+    description: >-
+      A point resolved by asset_id, latitude+longitude, or geocoded address; the query target
+      of the location-level scoring endpoints.
+    identifiers: [asset_id, latitude, longitude, address]
+  - name: Score
+    description: >-
+      Climate risk and resilience-adjusted risk indicators for a Location under a given
+      scenario/period, including overall and per-hazard scores (heat stress, inland flooding,
+      coastal flooding, and more).
+    dimensions: [scenario, period]
+    source_operation: GET /scores
+  - name: RiskData
+    description: Global Adaptation Layers detailed climate risk data for a Location.
+    source_operation: GET /risk_data
+  - name: FinancialImpact
+    description: Cashflow-modelling metrics (insurance increase, utility costs, discount rates) for a Location.
+  - name: Portfolio
+    description: Aggregated (averaged) risk and financial metrics across an institution's assets.
+    source_operation: GET /portfolio
+relationships:
+  - from: Institution
+    to: Asset
+    type: has_many
+    via: institution
+  - from: Asset
+    to: Location
+    type: has_one
+    via: asset_id
+  - from: Location
+    to: Score
+    type: has_many
+    via: scenario+period
+  - from: Location
+    to: RiskData
+    type: has_many
+    via: scenario+period
+  - from: Location
+    to: FinancialImpact
+    type: has_many
+    via: scenario+period
+  - from: Institution
+    to: Portfolio
+    type: has_one
+    via: institution

@@ -1,0 +1,20 @@
+generated: '2026-07-17'
+method: searched
+source: https://docs.alphageo.ai/for-developers/alphageo-data-api
+description: >-
+  Versioning and lifecycle posture for the AlphaGeo Data API, captured from the developer
+  documentation. AlphaGeo does not publish a dedicated deprecation policy, SLA, or public
+  status page as of this pass.
+versioning:
+  scheme: uri-path
+  current: v1
+  base_url: https://app.alphageo.ai/api/public/v1
+  docs: https://docs.alphageo.ai/for-developers/alphageo-data-api
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: No deprecation policy or RFC 8594 Sunset/Deprecation header support documented.
+sla:
+  url: null
+status_page: null
+deprecated_operations: []

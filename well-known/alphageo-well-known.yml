@@ -1,0 +1,36 @@
+generated: '2026-07-17'
+method: searched
+description: >-
+  Probe of AlphaGeo /.well-known/ discovery surface. The app host (app.alphageo.ai) is a
+  single-page-app that returns HTTP 200 with an HTML shell for unknown paths, so 200s on
+  security.txt / openid-configuration / oauth-authorization-server are SPA catch-all HTML,
+  not real discovery documents — recorded here as not-present.
+hosts:
+  - host: https://app.alphageo.ai
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        real: false
+        note: SPA catch-all HTML, not a security.txt
+      - path: /.well-known/openid-configuration
+        status: 200
+        real: false
+        note: SPA catch-all HTML, not OIDC discovery JSON
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        real: false
+        note: SPA catch-all HTML, not RFC 8414 JSON
+  - host: https://alphageo.ai
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+  - host: https://docs.alphageo.ai
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /llms.txt
+        status: 200
+        real: true
+        note: Present — captured verbatim at llms/alphageo-llms.txt

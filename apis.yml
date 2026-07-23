@@ -1,7 +1,15 @@
 aid: alphageo
 name: Alphageo
-description: Alphageo is a company surfaced as a portfolio company of dcvc and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  AlphaGeo is an AI-powered geospatial predictive analytics company that quantifies climate
+  risk and adaptation for real assets to guide resilient, future-proof investing. Its enterprise
+  SaaS platform (AlphaGeo Explorer) and public REST Data API deliver location-level and
+  portfolio-level climate risk scores, resilience-adjusted risk, physical hazard layers
+  (heat stress, inland and coastal flooding, hurricanes, drought, wildfire), and financial
+  impact metrics across CMIP6 emission scenarios (SSP245, SSP370, SSP585) and time horizons
+  (2025, 2035, 2050, 2100). The Data API returns per-location scores by address, coordinates,
+  or uploaded asset ID, and portfolio aggregates across an institution's assets. Backed by
+  DCVC, AlphaGeo also ships a Snowflake Native App and an agentic AI co-pilot, "Darwin."
 url: https://raw.githubusercontent.com/api-evangelist/alphageo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +17,123 @@ x-backed-by:
 - dcvc
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://app.alphageo.ai/assets/img/svg/alphaGeo-logo.svg
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
-apis: []
+- Climate
+- Climate Risk
+- Geospatial
+- Analytics
+- Risk
+- Real Estate
+- ESG
+- Data
+- Machine Learning
+apis:
+- name: AlphaGeo Data API
+  description: >-
+    Public REST API for programmatically accessing AlphaGeo climate risk scoring data for
+    global locations and portfolios. Location-Level Data APIs (Scores/CRRI, Physical Risk,
+    Resilience-adjusted Risk, Global Adaptation Layers Risk, Financial Impact) resolve by
+    address, latitude/longitude, or uploaded asset_id; Portfolio APIs (Portfolio Scores,
+    Institution Assets) aggregate across an institution's assets. All operations are GET and
+    require an Authorization token; an Enterprise subscription is required for API access.
+  humanURL: https://docs.alphageo.ai/for-developers/alphageo-data-api
+  baseURL: https://app.alphageo.ai/api/public/v1
+  tags:
+  - Climate Risk
+  - Geospatial
+  - Analytics
+  properties:
+  - type: Documentation
+    url: https://docs.alphageo.ai/for-developers/alphageo-data-api
+  - type: APIReference
+    url: https://docs.alphageo.ai/for-developers/alphageo-data-api
+  - type: Authentication
+    url: authentication/alphageo-authentication.yml
+  - type: RateLimits
+    url: rate-limits/alphageo-rate-limits.yml
+  - type: ErrorCatalog
+    url: errors/alphageo-problem-types.yml
+  - type: Conventions
+    url: conventions/alphageo-conventions.yml
+  - type: Lifecycle
+    url: lifecycle/alphageo-lifecycle.yml
+  - type: DataModel
+    url: data-model/alphageo-data-model.yml
+  - type: MCPServer
+    url: mcp/alphageo-mcp.yml
+common:
+- type: TrustCenter
+  url: security/alphageo-trust-center.yml
+- type: Compliance
+  url: https://alphageo.ai/security/
+- type: Security
+  url: https://alphageo.ai/security/
+- type: DeveloperPortal
+  url: https://docs.alphageo.ai/
+- type: Documentation
+  url: https://docs.alphageo.ai/
+- type: APIReference
+  url: https://docs.alphageo.ai/for-developers/alphageo-data-api
+- type: GettingStarted
+  url: https://docs.alphageo.ai/client-onboarding-guide
+- type: Blog
+  url: https://alphageo.ai/insights
+- type: Pricing
+  url: https://docs.alphageo.ai/pricing/pricing-guide
+- type: SignUp
+  url: https://app.alphageo.ai/trial_setup
+- type: Login
+  url: https://app.alphageo.ai/
+- type: Support
+  url: mailto:support@alphageo.ai
+- type: TermsOfService
+  url: https://alphageo.ai/service-agreement/
+- type: PrivacyPolicy
+  url: https://www.alphageo-info.com/privacy
+- type: Website
+  url: https://alphageo.ai/
+- type: Authentication
+  url: authentication/alphageo-authentication.yml
+- type: RateLimits
+  url: rate-limits/alphageo-rate-limits.yml
+- type: ErrorCatalog
+  url: errors/alphageo-problem-types.yml
+- type: Conventions
+  url: conventions/alphageo-conventions.yml
+- type: Lifecycle
+  url: lifecycle/alphageo-lifecycle.yml
+- type: DataModel
+  url: data-model/alphageo-data-model.yml
+- type: MCPServer
+  url: mcp/alphageo-mcp.yml
+- type: LLMsTxt
+  url: llms/alphageo-llms.txt
+- type: DomainSecurity
+  url: security/alphageo-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
