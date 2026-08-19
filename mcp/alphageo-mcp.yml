@@ -2,33 +2,60 @@ generated: '2026-07-17'
 method: derived
 status: candidate
 source: https://docs.alphageo.ai/for-developers/alphageo-data-api
-description: >-
-  Candidate MCP tool surface derived from AlphaGeo's documented public Data API operations.
-  AlphaGeo publishes no official hosted MCP server as of this pass; these tools map one-to-one
-  to real, documented REST endpoints and are a starting point for an MCP wrapper (not an
-  authoritative provider manifest).
+description: Candidate MCP tool surface derived from AlphaGeo's documented public Data API operations.
+  AlphaGeo publishes no official hosted MCP server as of this pass; these tools map one-to-one to real,
+  documented REST endpoints and are a starting point for an MCP wrapper (not an authoritative provider
+  manifest).
 server:
   name: alphageo
   transport: http
   url: null
 tools:
-  - name: get_scores
-    description: Retrieve physical climate risk and resilience-adjusted risk (CRRI) scores for a location.
-    source_operation: GET https://app.alphageo.ai/api/public/v1/scores
-    inputs: [asset_id, address, latitude, longitude, period, scenario]
-  - name: get_physical_risk
-    description: Retrieve physical climate hazard risk for a location.
-    source_operation: GET https://app.alphageo.ai/api/public/v1/physical_risk
-    inputs: [asset_id, address, latitude, longitude, period, scenario]
-  - name: get_risk_data
-    description: Retrieve Global Adaptation Layers detailed climate risk data for a location.
-    source_operation: GET https://app.alphageo.ai/api/public/v1/risk_data
-    inputs: [asset_id, address, latitude, longitude, period, scenario]
-  - name: get_portfolio_scores
-    description: Retrieve aggregated risk and financial-impact metrics across an institution's portfolio.
-    source_operation: GET https://app.alphageo.ai/api/public/v1/portfolio
-    inputs: [period, scenario]
-  - name: list_institution_assets
-    description: List the institution's uploaded assets and their UUIDs (paginated).
-    source_operation: GET https://app.alphageo.ai/api/public/v1/assets
-    inputs: [page, page_size]
+- name: get_scores
+  description: Retrieve physical climate risk and resilience-adjusted risk (CRRI) scores for a location.
+  source_operation: GET https://app.alphageo.ai/api/public/v1/scores
+  inputs:
+  - asset_id
+  - address
+  - latitude
+  - longitude
+  - period
+  - scenario
+- name: get_physical_risk
+  description: Retrieve physical climate hazard risk for a location.
+  source_operation: GET https://app.alphageo.ai/api/public/v1/physical_risk
+  inputs:
+  - asset_id
+  - address
+  - latitude
+  - longitude
+  - period
+  - scenario
+- name: get_risk_data
+  description: Retrieve Global Adaptation Layers detailed climate risk data for a location.
+  source_operation: GET https://app.alphageo.ai/api/public/v1/risk_data
+  inputs:
+  - asset_id
+  - address
+  - latitude
+  - longitude
+  - period
+  - scenario
+- name: get_portfolio_scores
+  description: Retrieve aggregated risk and financial-impact metrics across an institution's portfolio.
+  source_operation: GET https://app.alphageo.ai/api/public/v1/portfolio
+  inputs:
+  - period
+  - scenario
+- name: list_institution_assets
+  description: List the institution's uploaded assets and their UUIDs (paginated).
+  source_operation: GET https://app.alphageo.ai/api/public/v1/assets
+  inputs:
+  - page
+  - page_size
+deployment:
+  mode: none
+  verified: derived
+  tools: 5
+  checked: '2026-08-12'
+  source: catalog MCP census
