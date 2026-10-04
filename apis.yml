@@ -55,11 +55,11 @@ tags:
 - Climate Risk
 - Geospatial
 - Analytics
-- Risk
-- Real-Estate
+- Risk Management
+- Real Estate
 - ESG
 - Data
-- Machine-Learning
+- Machine Learning
 tags_raw:
 - Company
 - Climate
@@ -71,6 +71,8 @@ tags_raw:
 - ESG
 - Data
 - Machine Learning
+- Real-Estate
+- Machine-Learning
 apis:
 - name: AlphaGeo Data API
   description: >-
