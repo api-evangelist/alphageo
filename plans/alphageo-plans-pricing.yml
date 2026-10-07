@@ -1,0 +1,32 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://docs.alphageo.ai/partnerships-and-pricing/pricing-guide
+sources:
+- https://docs.alphageo.ai/partnerships-and-pricing/pricing-guide
+- https://docs.alphageo.ai/pricing/pricing-guide
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: negotiated
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+published: false
+note: No numeric price is published on the pricing page; Pricing guide describes licensing structure (unlimited
+  seats, modular access) but shows no numeric prices; quotes only via sales contact.
+plan_count: 2
+plans:
+- name: 'Platform License: AlphaGeo Explorer Web Platform'
+  price_text: Please contact our team for a quote.
+  period: none
+  included_quota: Access via AlphaGeo Explorer web platform, including to SaaS-only tools such as the
+    Asset Resilience Panel; automated report generation and data visualization; download data as PDF or
+    Excel
+- name: 'Data License: Direct Data Delivery'
+  price_text: Please contact our team for a quote.
+  period: none
+  included_quota: access to our analytics via API or direct data delivery (e.g., Snowflake, Amazon S3)
